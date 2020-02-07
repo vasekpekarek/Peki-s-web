@@ -2,12 +2,15 @@
 <html lang="cs-cz">
 <head>
 	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<title>Peki's WebPage</title>
 </head>
 <body>
-	<h1>Cvicny web</h1>
+	<marquee behavior="alternate" bgcolor="red" width="300">
+		<h1>Cvicny web</h1>
+	</marquee>
 	<h4>Prvni odstavec</h4>
-	<p><img src="../pictures/HulkPortret.jpg" alt="Hulk"></p>
+	<p><img src="../pictures/HulkPortret.jpg" alt="Hulk"/></p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -22,7 +25,51 @@
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	<h4>Odkazy</h4>
+	<h3>Seznamy</h3>
+	<h5>Organized - seznam</h5>
+		<ol type="I" start="2">
+			<li>radek</li>
+			<li>radek</li>
+			<li>radek</li>
+			<li>radek</li>
+		</ol>
+	<h5>Reversed</h5>
+		<ol reversed="reversed">
+			<li>radek</li>
+			<li>radek</li>
+			<li>radek</li>
+			<li>radek</li>
+		</ol>
+	<h5>Unorganized - seznam</h5>
+		<ul type="circle">
+			<li>Prvni radek</li>
+			<li type="square">Druhy radek</li>
+			<li>Treti radek</li>
+			<li type="disc">Ctvrty radek</li>
+		</ul>
+	<h5>Viceurovnovy seznam</h5>
+		<ol>
+			<li>Prvni radek</li>
+			<ol type="a">
+				<li>Druhy radek</li>
+				<li>Treti radek</li>
+				<ol type="i">
+					<li>Ctvrty radek</li>
+					<li>Paty radek</li>
+				</ol>
+			</ol>
+			<li>Sesty</li>
+		</ol>
+	
+	<h5>Definition list</h5>
+	<dl>
+		<dt>Nadrazeny text</dt>
+			<dd>Podrazeny text</dd>
+		<dt>Nadrazeny text</dt>
+			<dd>Podrazeny text</dd>
+	</dl>
+
+	<h3>Odkazy</h3>
 	<a href="http://www.google.com" title="Google" target="blank">Odkaz na Google</a>
 	<br>
 	<a href="kontakt.html" title="e-mail">Prejit na kontakt</a>
